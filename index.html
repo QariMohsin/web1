@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/* Remove all padding and margin from the body and html */
+		html, body {
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+		}
+
+		/* Style for clickable links and hover effect */
+		a {
+			color: black;  /* Default color */
+			text-decoration: none;  /* Remove underline */
+		}
+		a:hover {
+			color: white;  /* Change text color to white on hover */
+		}
+
+		/* Other styles remain unchanged */
+		div.border table {
+			width: 100%;
+
+		}
+
+		#a, #b, #d, #e, #f {
+			text-align: center;
+			font-size: 20px;
+		}
+
+		/* Hover effect for links */
+		#a a, #b a, #d a, #e a, #f a {
+			color: white; /* Default color */
+			text-decoration: none; /* Remove underline */
+		}
+
+		/* Change color to black when hovered */
+		#a a:hover, #b a:hover, #d a:hover, #e a:hover, #f a:hover {
+			color: black;
+		}
+
+		/* Style for the table background */
+		div.image img {
+			position: absolute;
+			background-image: url("fitness.jpg"); /* Image URL */
+			height: 100vh; /* Full viewport height */
+			width: 100%;
+			object-fit: cover; /* Ensure the image covers the screen */
+		}
+
+		div.over {
+			position: absolute;
+			height: 100vh;
+			width: 100%;
+			background-color: rgba(160, 32, 240, 0.5);
+			color: white;
+			text-align: center;
+			padding-top: 100px;
+		}
+
+		div.over h2 {
+			position: absolute;
+    font-size: 50px; /* Increase the font size of h2 */
+    color: #ffb84d;
+    left: 800px;
+    transform: translateX(-50%); /* Centers horizontally */
+    top: 100px;
+}
+
+div.over h1 {
+	position: absolute;
+    font-size: 80px; /* Increase the font size of h1 */
+    font-weight: bold;
+    color: white; /* Set the color of the h1 text */
+    left: 800px;
+    transform: translateX(-50%); /* Centers horizontally */
+    top: 130px;
+}
+
+       /* Style for <p> text */
+div.over p {
+	position: absolute;
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    top: 280px;
+    left: 600px;
+}
+
+/* Style for the buttons */
+div.over button {
+    background-color: white; /* Initial background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add some padding to buttons */
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    margin: 10px 5px; /* Space between buttons */
+}
+
+/* Positioning for Read More button */
+div.over button#b {
+    position: absolute;
+    top: 380px; /* Adjust to position below paragraph */
+    left: 750px;
+    background-color: white; /* Initial background color */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Add some padding to buttons */
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    margin: 10px 5px; 
+}
+
+/* Positioning for Get a Quote button */
+div.over button#a {
+    position: absolute;
+    top: 380px; /* Adjust to position below Read More button */
+    left: 600px;
+    background-color: orange; /* Initial background color */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Add some padding to buttons */
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    margin: 10px 5px; }
+
+/* Hover effect for buttons */
+.over button #a:hover {
+	position: relative;
+    color: purple; /* Change background to orange on hover */
+}
+.over button #b:hover {
+  color: purple; /* Change background to orange on hover */
+}
+    footer {
+    	position: absolute;
+			background-color: #333;
+			color: white;
+			position: absolute;
+			bottom: 0;
+			padding: 20px;
+			width: 1310px;
+			height: 400px;
+			top: 640px;
+		}
+		footer h1
+		{
+			position: relative;
+			text-align: center;
+		}
+		footer div.input input
+		{
+			position: absolute;
+			top: 100px;
+			left:250px; 
+			width: 550px;
+			height: 38px;
+		}
+		footer div.bii button
+		{
+			position: absolute;
+			top: 100px;
+			left: 800px;
+			height:45px;
+			width: 200px;
+			text-align: center;
+			background: red;
+			color: white;
+			cursor: pointer; 
+		}
+		footer h2{
+			position:absolute; 
+			top: 180px;
+			left: 70px;
+		}
+		footer p{
+			position: absolute;
+			top: 230px;
+			left: 70px;
+			font-size: 20px;
+			line-height: 1.3;
+		}
+		div.pa p {
+			position: absolute;
+			text-align: center;
+			cursor: pointer;
+			top: 1030px;
+			color: white;
+			left: 500px;
+		}
+		footer div.menu p{
+			position: absolute;
+			left: 500px;
+			top: 230px;
+			cursor: pointer;
+		}
+		.menu p:hover {
+			color: ;
+		}
+		footer div.menu h1{
+			position: absolute;
+			left: 500px;
+			top: 180px;
+		}
+		footer div.os p{
+			position: absolute;
+			left: 700px;
+			top: 230px;
+			cursor: pointer;
+		}
+		.menu p:hover {
+			color: ;
+		}
+		footer div.os h1{
+			position: absolute;
+			left: 700px;
+			top: 180px;
+		}
+		div.css h1{
+			position: absolute;
+			left: 1000px;
+			top: 180px;
+		} 
+		div.css img.bb{
+			position: relative;
+			top: 150px;
+			left: 1000px;
+		}
+		div.css img.cc{
+			position: relative;
+			top: 170px;
+			left: 1000px;
+		}
+		div.css img.dd{
+			position: absolute;
+			top: 350px;
+			left: 1020px;
+		}
+		div.pu p{
+			position: relative;
+			top: 740px;
+			left: 1050px;
+			color: white;
+		}
+		div.pi p{
+			position: relative;
+			top: 750px;
+			left: 1050px;
+			color: white;
+		}
+		div.pk p{
+			position: relative;
+			top: 760px;
+			left: 1050px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<table width="100%" height="50" bgcolor="skyblue">
+		<tr height="90">
+			<td width="100"></td>
+			<td width="20"><a href="#" ><img src="logo.png"></a></td> 
+			<td width="20"><a href="#"><h3><b>ENERGYM</b></h3></a></td> 
+			<td width="100"></td>
+			<td width="20"><a href="#"><img src="location.png" width="25px"></a></td> 
+			<td width="20"><a href="#"><h3><b>LOCATION</b></h3></a></td> 
+			<td width="100"></td>
+			<td width="10"><a href="#"><img src="call.png" width="25px"></a></td> 
+			<td width="10"><a href="#"><h3><b>Call: +1234567890</b></h3></a></td> 
+			<td width="100"></td>
+			<td width="20"><a href="#"><img src="email.png" width="25px"></a></td>
+			<td width="20"><a href="#"><h3><b>qarimohsinqadri2917@gmail.com</b></h3></a></td>
+			<td width="100"></td>
+		</tr>
+	</table>
+	<div class="border">
+		<table width="100%" bgcolor="#ff9900">
+			<tr height="50">
+				<td width="100"></td>
+				<td id="a" width="100"><a href="file:///C:/Users/HK/Desktop/index.html#">Home</a></td>
+				<td id="b" width="100"><a href="file:///C:/Users/HK/Desktop/about.html">About</a></td>
+				<td id="d" width="100"><a href="file:///C:/Users/HK/Desktop/Services.html">Services</a></td>
+				<td id="e" width="100"><a href="file:///C:/Users/HK/Desktop/Contact us.html">Contact</a></td>
+				<td id="f" width="100"><a href="#">Login</a></td>
+				<td width="100"></td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- Background Image Section -->
+	<div class="image">
+		<img src="fitness.jpg">
+	</div>
+
+	<!-- Overlay with text and buttons -->
+	<div class="over">
+		<h2>Get Your Body</h2>
+		<h1>Fitness Here</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br/> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br/> enim ad minim veniam.</p>
+		<button id="a">Read More</button>
+		<button id="b">Get a Quote</button>
+	</div>
+	<footer>
+		<h1>OUR NEWSLETTER</h1>
+		<div class="input">
+			<input type="text" name="" placeholder="Enter your Email">
+		</div>
+		<div class="bii">
+			<button>Subscribe</button>
+		</div>
+		<h2>About Energym</h2>
+		<p>consectetur adipiscing elit, sed<br/> do eiusmod tempor incididunt<br/> ut labore et dolore magna<br/> aliqua. Ut enim ad minim<br/> veniam, quis nostrud<br/> exercitation u</p>
+		<div class="menu"><h1>Menus </h1><br/>
+			<p>Home<br/>
+               About<br/>
+               Services<br/>
+               Contact Us<br/>
+              Login</p></div>
+              <div class="os"><h1>Useful Links</h1>
+              	<p>Adipiscing<br/>
+                   Elit, sed<br/>
+                   do Eiusmod<br/>
+                   Tempor<br/>
+                   incididunt</p></div>
+                   <div class="css"><h1>Contact us</h1>
+                   <a href="#" target="_blank"><img src="location.png" class="bb"></a><br/>
+                   	<a href="#" target="_blank"><img src="call.png" class="cc "></a><br/>
+                   	<a href="#" target="_blank"><img src="email.png" class="dd"></a><br/>
+                   	<div/>
+	</footer>
+	<div class="pa"><p>© 2019 All Rights Reserved. Design by Free Html Templates</p></div>
+	<div class="pu"><p>No.123, loram ipusm</p></div>
+	<div class="pi"><p>+01 12345678901</p></div>
+	<div class="pk"><p>demo123@gmail.com</p></div>
+</body>
+</html>
